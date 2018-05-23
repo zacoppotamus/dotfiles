@@ -83,10 +83,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias dt="cd ~/Desktop"
 alias dv="cd ~/Developer"
+alias slack-d3="slack-term -config ~/slack-term-d3.json"
+alias slack-design="slack-term -config ~/slack-term-design.json"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /Users/zaci/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Make sure that VirtualEnv defaults to Python 2.7
+export VIRTUALENV_PYTHON=python
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/zaci/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/zaci/Downloads/google-cloud-sdk/path.zsh.inc'; fi
